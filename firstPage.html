@@ -5,27 +5,29 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>MengSeang's first page</title>
 </head>
-<body>
+<body id="body">
  <h2 id="head">Wellcome to my page</h2>
  <div>
   <p style="font-size: 25px;">My name is Mengseang <br> You can call me <b>seang</b> <br> I'm cadt's student</p>
   <br>
-  <p style="font-size: 40px;"> I have a lot of hobbies :</p>
-  <ul id="l">
-   <div>
-     <li> Playing game.<a href="https://www.youtube.com/live/Y6kHxZR57fI?si=iR2n3W4PFYwjlCfn">Click here</a></li>
-     <img  id="im0"src="./image/game.webp">
-   </div>
-   <div>
-      <li> doing exercises.</li>
-      <img id="im1" src="./image/workout.jpg"> 
-   </div>
-   <div>
-      <li> playing music instrument.</li>
-      <img id="im2" src="./image/download.jpg">
+  <p style="font-size: 40px;"> I have a lot of hobbies :</p>'
+  <hr>
+    <ul id="l">
+    <div>
+      <li> Playing game.<a href="https://www.youtube.com/live/Y6kHxZR57fI?si=iR2n3W4PFYwjlCfn">Click here</a></li>
+      <img  id="im0"src="./image/game.webp">
     </div>
-   
-  </ul>
+    <div>
+        <li> doing exercises.<a href="https://www.youtube.com/live/Y6kHxZR57fI?si=iR2n3W4PFYwjlCfn">Click here</a></li>
+        <img id="im1" src="./image/workout.jpg"> 
+    </div>
+    <div>
+        <li> playing music instrument.<a href="https://youtu.be/5GroWAOn8h8?si=7JUstc7o0cvg7Oon">click here</a></li>
+        <img id="im2" src="./image/download.jpg">
+      </div>
+    
+    </ul>
+<hr>
  
  </div>
  <script>
@@ -47,13 +49,17 @@ for(var i=0; i<3; i++){
     img.borderRadius="50%";
     img.marginLeft="20px";
     img.marginRight="20px";
+    img.marginTop="20px";
   }
   // for list style
   var z= document.getElementById("l").children;
   for(var i=0; i<z.length; i++){
-      z[i].style.listStyleType="none";
+      z[i].style.listStyleType="square"
       z[i].style.fontSize="20px";
       z[i].style.color="blue";
+  //style for all body 
+  var body = document.getElementById("body").style;
+  body.backgroundColor="lightblue";
   }
  </script>
 </body>
