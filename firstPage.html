@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>MengSeang's first page</title>
+</head>
+<body>
+ <h2 id="head">Wellcome to my page</h2>
+ <div>
+  <p>My name is Mengseang <br> You can call me <b>seang</b> <br> I'm cadt's student</p>
+  <br>
+  <p style="font-size: 20px;"> I have a lot of hobbies :</p>
+  <ul id="l">
+   <div >
+     <li> Playing game.</li>
+     <img  id="im0"src="./image/game.webp">
+   </div>
+   <div>
+      <li> doing exercises.</li>
+      <img id="im1" src="./image/workout.jpg"> 
+   </div>
+    <div >
+      <li> playing music instrument.</li>
+      <img id="im2" src="./image/download.jpg">
+    </div>
+   
+  </ul>
+ 
+ </div>
+ <script>
+  // that is about header 
+  var x=  document.getElementById("head").style;
+       x.backgroundColor="green";
+       x.fontSize="50px";
+       x.textAlign="center";
+
+  // that is about image style 
+ var y= document.getElementById("l").style;
+      y.display="flex";
+  // for image edit
+for(var i=0; i<3; i++){
+    var img = document.getElementById("im"+i).style;
+    img.width="200px";
+    img.height="200px";
+    img.borderRadius="50%";
+    img.marginLeft="20px";
+    img.marginRight="20px";
+  }
+  // for list style
+  var z= document.getElementById("l").children;
+  for(var i=0; i<z.length; i++){
+      z[i].style.listStyleType="none";
+      z[i].style.fontSize="20px";
+      z[i].style.color="blue";
+  }
+ </script>
+</body>
+</html>
