@@ -12,15 +12,15 @@
   <br>
   <p style="font-size: 20px;"> I have a lot of hobbies :</p>
   <ul id="l">
-   <div >
-     <li> Playing game.</li>
+   <div>
+     <li> Playing game.<a href="https://www.youtube.com/live/Y6kHxZR57fI?si=iR2n3W4PFYwjlCfn">Click here</a></li>
      <img  id="im0"src="./image/game.webp">
    </div>
    <div>
       <li> doing exercises.</li>
       <img id="im1" src="./image/workout.jpg"> 
    </div>
-    <div >
+   <div>
       <li> playing music instrument.</li>
       <img id="im2" src="./image/download.jpg">
     </div>
@@ -38,6 +38,7 @@
   // that is about image style 
  var y= document.getElementById("l").style;
       y.display="flex";
+      y.textAlign="center";
   // for image edit
 for(var i=0; i<3; i++){
     var img = document.getElementById("im"+i).style;
